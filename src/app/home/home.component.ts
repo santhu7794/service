@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
     })
     this.api.getproductByid().subscribe((res: any) => {
       this.nani1 = res;
-      console.log(this.nani1,'nani1');
+      console.log(this.nani1, 'nani1');
       // console.log("products",res)
     })
     this.api.product().subscribe((res: any) => {
@@ -44,8 +44,13 @@ export class HomeComponent implements OnInit {
       console.log(this.nani, 'nani');
       // console.log("products",res)
     })
+    
   }
-  submit() {
-    console.log(this.service.value, "successfully")
-  } 
+
+  product() {
+    this.api.postproduct(this.service.value).subscribe((res:any)=>{
+      console.log(res, 'post data');
+      
+    })
+  }
 }

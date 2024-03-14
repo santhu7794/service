@@ -20,4 +20,7 @@ product(){
 mani(){
   return this.http.get('https://dummyjson.com/products')
 }
+postproduct(data:any){
+  return this.http.post('https://dummyjson.com/products/add',data)
+}
 }

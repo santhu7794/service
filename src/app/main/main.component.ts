@@ -16,6 +16,9 @@ export class MainComponent implements OnInit {
    this.api.mani().subscribe((res:any)=>{
     console.log("products",res)
    })
+ 
+ 
+  
   }
 
 }
