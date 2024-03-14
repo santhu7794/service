@@ -47,5 +47,5 @@ export class HomeComponent implements OnInit {
   }
   submit() {
     console.log(this.service.value, "successfully")
-  }
+  } 
 }
